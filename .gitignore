@@ -8,3 +8,4 @@
 out/
 
 *.seq_row_set.txt
+.vscode

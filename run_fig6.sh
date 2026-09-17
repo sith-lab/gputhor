@@ -1,5 +1,7 @@
 #!/bin/bash
 
+bash "$(dirname "${BASH_SOURCE[0]}")/util/check_ecc.sh" Disabled || exit 1
+
 bank_id=77           # CHANGE ME!
 delay=58            # CHANGE ME! Delay, set to an optimal delay found by run_delay.sh
 
@@ -56,4 +58,3 @@ done
 echo "Plotting Figure 6 ..."
 python3 $HAMMER_ROOT/plot_scripts/plot_fig6.py
 echo "Saved Figure 6 at ${HAMMER_ROOT}/results/fig6.pdf"
-

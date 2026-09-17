@@ -1,5 +1,7 @@
 #!/bin/bash
 
+bash "$(dirname "${BASH_SOURCE[0]}")/util/check_ecc.sh" Disabled || exit 1
+
 bank_id=77           # CHANGE ME!
 delay=0
 

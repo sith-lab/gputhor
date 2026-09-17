@@ -19,6 +19,8 @@ set -o pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+bash "$SCRIPT_DIR/util/check_ecc.sh" Disabled || exit 1
+
 if [ -z "${HAMMER_ROOT:-}" ]; then
   echo "HAMMER_ROOT not set"
   exit 1

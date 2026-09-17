@@ -1,5 +1,7 @@
 #!/bin/bash
 
+bash "$(dirname "${BASH_SOURCE[0]}")/util/check_ecc.sh" Disabled || exit 1
+
 # Bank IDs to run.
 bank_ids=(77 149 302 322)
 
