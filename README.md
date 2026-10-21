@@ -215,7 +215,7 @@ The script is mostly non-interactive, until it opens an interactive _Root Shell_
 
 > Note 1: the program will exit gracefully when you exit the root shell or after five failed exploit attempts. Please avoid force quitting it.
 
-> Note 2: after a fresh reboot, an uncorrectable DRAM error (DUE) may not immediately be present and the script first hammers continuously to check when it re-appears. **This can take anywhere from a few minutes up to about an hour.** The script is not hung during this phase — please let it run; the waiting period is expected.
+> Note 2: after a fresh reboot, an uncorrectable DRAM error (DUE) may not immediately be present and the script first hammers continuously to check when it re-appears. **This can take anywhere from a few minutes up to about 24 hours.** The script is not hung during this phase — please let it run; the waiting period is expected.
 
 
 ### Exploit w/ DUE (`run_ecc_exploit.sh`)
